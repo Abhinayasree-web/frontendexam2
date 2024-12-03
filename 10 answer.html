@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Variables</title>
+        <style>
+            :root {
+                --main-color: #4a90e2;
+            }
+    
+            header, main {
+                background-color: var(--main-color);
+                padding: 20px;
+            }
+    
+            @media screen and (max-width: 768px) {
+                :root {
+                    --main-color: #ff6347;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Variables Demo</h1>
+        </header>
+        <main>
+            <p>This page uses css with the demonstartes of changing the background colors.</p>
+        </main>
+    </body>
+    </html>
+    
