@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Text Selection</title>
+  <style>
+    /* Basic page styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    /* Style the selected text */
+    ::selection {
+      background-color: #ff6347;  /* Tomato color */
+      color: white;               /* White text */
+      text-shadow: 1px 1px 2px black;  /* Optional text shadow */
+    }
+
+    /* Customize text selection for different elements */
+    p::selection {
+      background-color: #32cd32;  /* Lime green color for paragraphs */
+      color: white;               /* White text */
+    }
+
+    h1::selection {
+      background-color: #1e90ff;  /* Dodger blue color for h1 */
+      color: yellow;              /* Yellow text */
+    }
+  </style>
+</head>
+<body>
+  <h1>Custom Text Selection</h1>
+  <p>This is a paragraph of text. Try selecting it to see the custom styling in action.</p>
+  <p>Here's another paragraph. Each selection might have a different look!</p>
+</body>
+</html>
